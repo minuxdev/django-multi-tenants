@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-!&(^1_a18^e@5h2pxlk*19i@3@9ai4!(y3j&-!5n(rx!7ln6hc'
 
-DEBUG = True
+DEBUG = False
 
 
 # CONFIG HOSTS
@@ -154,3 +154,5 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app/','https://*.127.0.0.1']

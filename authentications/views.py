@@ -16,7 +16,8 @@ def login_hendler(request):
             try:
                 schema_name = Client.objects.get(schema_name=name).schema_name
                 if schema_name == name:
-                    return redirect(f'http://{name}.localhost:8000/userspace/')
+                    # return redirect(f'http://{name}.localhost:8000/userspace/')
+                    return redirect(f'https://{name}.leeva.up.railway.app/userspace/')
                 else:
                     #   Login error message
                     pass
